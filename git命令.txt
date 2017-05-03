@@ -1,0 +1,74 @@
+
+cd c:/git
+git init
+git clone https://github.com/Hezon/New-project.git
+cd New-project
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:Hezon/Wine.git
+git push -u origin master
+
+ls 查找当前的目录
+cd  进入路径
+pwd 显示当前路径
+mkdir  创建文件
+
+
+git 命令
+
+git init //将当前的文件夹  初始化成 git版本控制系统
+
+git add 文件名称  //将当前文件加入暂存区 缓冲区
+
+git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
+
+git commit //提交修改至版本控制器
+
+git commit -m "提交的信息" //每一次提交的时候一定要写log 表示当前的操作是什么
+
+
+git status //查看当前的工作区的状态
+
+
+git diff 文件名称   //查看文件的修改
+
+
+git  log  //查看提交信息
+
+git reset --hard HEAD^   //回到上一个版本
+
+git reflog   //查看以往的git 操作纪录
+
+  
+git checkout -- readme.text   重新拉取 某个文件
+
+
+git rm  文件名 //删除管理库中的某个文件
+
+
+//将本地的代码版本管理库提交到github上去
+
+
+第一次创建git
+git init
+git add README.md  先创建README.md文件再执行本句
+git commit -m "first commit" 
+git remote add origin git@github.com:Hezon/co3.git
+git push -u origin master 
+
+
+之后的提交则直接用下面的
+git add .
+git commit -m "what" 
+git push -u origin master
+
+
+
+
+git pull origin master
+意思就是把远程最新的代码更新到本地。一般我们在 push 之前都会先 pull ，这样不容易冲突。
+
+
+
+ git remote rm origin
+
